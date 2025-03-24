@@ -27,7 +27,7 @@ public class Main {
     public static boolean isPrime(int n) {
         if (n < 2) {
             return false;
-        };
+        }
 
         for (int i = 2; i * i <= n; i++) {
             if (n % i == 0) {
@@ -50,7 +50,7 @@ public class Main {
     // Problem 5. Complexity: O(2^n)
     public static long fibonacci(int n) {
         if (n < 2) {
-            return n;  // F0 = 0, F1 = 1
+            return n;
         }
 
         return fibonacci(n - 1) + fibonacci(n - 2);
@@ -86,7 +86,7 @@ public class Main {
         for (int i = start; i < chars.length; i++) {
             swap(chars, i, start);
             permuteHelper(chars, start + 1);
-            swap(chars, i, start);  // backtrack
+            swap(chars, i, start);
         }
     }
 
